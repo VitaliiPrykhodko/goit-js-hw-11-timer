@@ -25,7 +25,7 @@ setContentDate(toSeconds, seconds)
  }, 1000)
 }
 
-startTimer()
+// startTimer()
 
 function setContentDate(place, value) {
     place.textContent = value

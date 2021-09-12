@@ -2,7 +2,7 @@ import ref from "./js/refs.js";
 const { toDays, toHours, toMins, toSeconds } = ref;
 
 class CountdownTimer {
-    constructor(targetDate) {
+    constructor({ targetDate }) {
         this.targetDate = targetDate
         this.time = 0
     }
@@ -47,6 +47,9 @@ place.textContent = value
 }
 }
 
-const timer = new CountdownTimer(new Date('Jan 07, 2022'))
+const timer = new CountdownTimer({
+  selector: '#timer-1',
+  targetDate: new Date('Dec 25, 2021'),
+});
 timer.startTimer()
 
