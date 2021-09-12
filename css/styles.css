@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("../image/christmas.jpg");
+  background-image: url("../../../goit-js-hw-11-timer/image/christmas.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
