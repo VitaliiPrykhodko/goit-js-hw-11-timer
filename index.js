@@ -6,7 +6,6 @@ class CountdownTimer {
     }
 
     startTimer() {
-        if (this.selector) {
             this.targetDate = this.targetDate.getTime()
             setInterval(() => {
                 const currentDay = Date.now()
@@ -24,7 +23,7 @@ class CountdownTimer {
 
             }, 1000)
         }
-    }
+    
 refs(param) {
 return document.querySelector(this.selector + ' ' + param)
 }
@@ -56,4 +55,10 @@ const timer = new CountdownTimer({
   targetDate: new Date('Dec 25, 2021'),
 });
 timer.startTimer()
+
+const timer2 = new CountdownTimer({
+  selector: '#timer-2',
+  targetDate: new Date('Dec 25, 2022'),
+});
+timer2.startTimer()
 
