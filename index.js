@@ -56,9 +56,4 @@ const timer = new CountdownTimer({
 });
 timer.startTimer()
 
-const timer2 = new CountdownTimer({
-  selector: '#timer-2',
-  targetDate: new Date('Dec 25, 2022'),
-});
-timer2.startTimer()
 
