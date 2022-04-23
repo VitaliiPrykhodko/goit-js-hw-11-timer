@@ -52,7 +52,7 @@ place.textContent = value
 
 const timer = new CountdownTimer({
   selector: '#timer-1',
-  targetDate: new Date('Dec 25, 2021'),
+  targetDate: new Date('Dec 25, 2022'),
 });
 timer.startTimer()
 
